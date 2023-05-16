@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>ID: {{ clients.id }}</h1>
+
+  <p><strong>Name:</strong> {{ clients.name }}</p>
+  <p><strong>Last name:</strong> {{ clients.last_name }}</p>
+  <p><strong>Middle name:</strong> {{ clients.middle_name }}</p>
+  <p><strong>Passport:</strong> {{ clients.passport }}</p>
+  <a href="{{clients.get_absolute_url}}/update">Update</a>
+  <a href="{{clients.get_absolute_url}}/delete">Delete</a>
+
+{% endblock %}

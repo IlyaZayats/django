@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>ID: {{ seasons.id }}</h1>
+
+  <p><strong>Start:</strong> {{ seasons.start }}</p>
+  <p><strong>End:</strong> {{ seasons.end }}</p>
+  <p><strong>Closed:</strong> {{ seasons.closed }}</p>
+  <a href="{{seasons.get_absolute_url}}/update">Update</a>
+  <a href="{{seasons.get_absolute_url}}/delete">Delete</a>
+
+{% endblock %}
